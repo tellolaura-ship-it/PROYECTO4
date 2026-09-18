@@ -132,7 +132,7 @@ public class GestorAlumnos extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         Escritorio.removeAll();
         Escritorio.repaint();
-        FormularioMateriass formu = new FormularioMateriass();
+        FormularioMaterias formu = new FormularioMaterias();
         formu.setVisible(true);
         Escritorio.add(formu);
         Escritorio.moveToFront(formu);

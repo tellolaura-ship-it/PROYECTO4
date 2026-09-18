@@ -13,7 +13,7 @@ public class FormularioMaterias extends javax.swing.JInternalFrame {
         this.listaMaterias = materias;
     }
 
-    private FormularioMaterias() {
+    FormularioMaterias() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     @SuppressWarnings("unchecked")
