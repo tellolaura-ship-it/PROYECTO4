@@ -13,37 +13,37 @@ public class FormularioMaterias extends javax.swing.JInternalFrame {
         this.listaMaterias = materias;
     }
 
-    FormularioMaterias() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public FormularioMaterias() {
+         initComponents(); //To change body of generated methods, choose Tools | Templates.
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jInternalFrame1 = new javax.swing.JInternalFrame();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jbl1 = new javax.swing.JLabel();
+        lbl2 = new javax.swing.JLabel();
+        jbl3 = new javax.swing.JLabel();
+        jbl4 = new javax.swing.JLabel();
         jtCodigo = new javax.swing.JTextField();
         jtNombreMateria = new javax.swing.JTextField();
         jtAño = new javax.swing.JTextField();
         jbGuardar2 = new javax.swing.JButton();
-        jbNuevo2 = new javax.swing.JButton();
+        jbN2 = new javax.swing.JButton();
         jbSalir2 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jInternalFrame1.setVisible(true);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
-        jLabel1.setText("Formulario De Materias");
+        jbl1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jbl1.setText("Formulario De Materias");
 
-        jLabel2.setText("codigo de materias");
+        lbl2.setText("codigo de materias");
 
-        jLabel3.setText("Nombre de la materia");
+        jbl3.setText("Nombre de la materia");
 
-        jLabel4.setText("Año al que pertenece");
+        jbl4.setText("Año al que pertenece");
 
         jbGuardar2.setText("Guardar");
         jbGuardar2.addActionListener(new java.awt.event.ActionListener() {
@@ -52,14 +52,19 @@ public class FormularioMaterias extends javax.swing.JInternalFrame {
             }
         });
 
-        jbNuevo2.setText("Nuevo");
-        jbNuevo2.addActionListener(new java.awt.event.ActionListener() {
+        jbN2.setText("Nuevo");
+        jbN2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbNuevo2ActionPerformed(evt);
+                jbN2ActionPerformed(evt);
             }
         });
 
         jbSalir2.setText("Salir");
+        jbSalir2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSalir2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
@@ -72,8 +77,8 @@ public class FormularioMaterias extends javax.swing.JInternalFrame {
                         .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel2))
+                                    .addComponent(jbl3)
+                                    .addComponent(lbl2))
                                 .addGap(50, 50, 50)
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jtNombreMateria, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
@@ -81,40 +86,40 @@ public class FormularioMaterias extends javax.swing.JInternalFrame {
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jbGuardar2)
-                                    .addComponent(jLabel4))
+                                    .addComponent(jbl4))
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                         .addGap(53, 53, 53)
                                         .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jbl1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jtAño)))
                                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                         .addGap(284, 284, 284)
                                         .addComponent(jbSalir2))))))
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addGap(256, 256, 256)
-                        .addComponent(jbNuevo2)))
+                        .addComponent(jbN2)))
                 .addGap(0, 128, Short.MAX_VALUE))
         );
         jInternalFrame1Layout.setVerticalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addComponent(jbl1)
                 .addGap(18, 18, 18)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
+                    .addComponent(lbl2)
                     .addComponent(jtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(38, 38, 38)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(jbl3)
                     .addComponent(jtNombreMateria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
+                    .addComponent(jbl4)
                     .addComponent(jtAño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(37, 37, 37)
-                .addComponent(jbNuevo2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addComponent(jbN2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbGuardar2)
                     .addComponent(jbSalir2))
@@ -140,12 +145,25 @@ public class FormularioMaterias extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbGuardar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbGuardar2ActionPerformed
-
+        int codigo = 
+                Integer.parseInt(jtAño.getText());
+        String nombre = jtNombreMateria.getText();
+        int año =
+                Integer.parseInt(jtAño.getText());
+        Materia materia = new Materia (codigo, nombre, año);
+        listaMaterias.add(materia);
     }//GEN-LAST:event_jbGuardar2ActionPerformed
 
-    private void jbNuevo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbNuevo2ActionPerformed
+    private void jbN2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbN2ActionPerformed
+        jtCodigo.setText(" ");
+        jtNombreMateria.setText(" ");
+        jtAño.setText(" ");
+    }//GEN-LAST:event_jbN2ActionPerformed
 
-    }//GEN-LAST:event_jbNuevo2ActionPerformed
+    private void jbSalir2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSalir2ActionPerformed
+         // TODO add your handling code here:
+         this.dispose();
+    }//GEN-LAST:event_jbSalir2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,15 +202,15 @@ public class FormularioMaterias extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JButton jbGuardar2;
-    private javax.swing.JButton jbNuevo2;
+    private javax.swing.JButton jbN2;
     private javax.swing.JButton jbSalir2;
+    private javax.swing.JLabel jbl1;
+    private javax.swing.JLabel jbl3;
+    private javax.swing.JLabel jbl4;
     private javax.swing.JTextField jtAño;
     private javax.swing.JTextField jtCodigo;
     private javax.swing.JTextField jtNombreMateria;
+    private javax.swing.JLabel lbl2;
     // End of variables declaration//GEN-END:variables
 }

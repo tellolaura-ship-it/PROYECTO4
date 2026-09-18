@@ -16,18 +16,9 @@ import javax.swing.JOptionPane;
  * @author fatimaalcaraz
  */
 public class formularioAlumnos extends javax.swing.JInternalFrame {
-
-    
-    
-  
-
   public formularioAlumnos() {
         initComponents();
-        
-      
-        
-        
-       
+           
     }
 
     /**
@@ -190,11 +181,13 @@ public class formularioAlumnos extends javax.swing.JInternalFrame {
         String apellido = txtApellido.getText();
         Alumno alu= new Alumno(legajo,nombre,apellido);
         GestorAlumnos.listaAlumnos.add(alu);
+        
         JOptionPane.showMessageDialog(null," se agrego el alumno " + alu + " correctamente");
         txtlegajo.setText(" ");
         txtNombre.setText(" ");
         txtApellido.setText(" "); 
            }catch(NumberFormatException e){
+               
            JOptionPane.showMessageDialog(null, "Debe ingresar caracteres numericos en legajo");}
            txtlegajo.setText(" ");
           
