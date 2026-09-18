@@ -5,6 +5,7 @@
  */
 package formularios;
 
+import java.util.HashSet;
 import práctico4.Alumno;
 import práctico4.Materia;
 
@@ -17,6 +18,10 @@ public class FormularioInscripcion extends javax.swing.JFrame {
         llenarAlumnos();
         
         
+    }
+
+    FormularioInscripcion(HashSet<Alumno> alumnos, HashSet<Materia> materias) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @SuppressWarnings("unchecked")

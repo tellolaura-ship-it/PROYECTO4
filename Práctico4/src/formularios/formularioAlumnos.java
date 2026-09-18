@@ -187,7 +187,7 @@ public class formularioAlumnos extends javax.swing.JInternalFrame {
         txtNombre.setText(" ");
         txtApellido.setText(" "); 
            }catch(NumberFormatException e){
-               
+                
            JOptionPane.showMessageDialog(null, "Debe ingresar caracteres numericos en legajo");}
            txtlegajo.setText(" ");
           
