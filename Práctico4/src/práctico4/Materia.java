@@ -43,5 +43,21 @@ public class Materia {
     public void setAño(int año) {
         this.año = año;
     }
-    
+    @Override
+    public String toString() {
+        return nombre + " (" + año + ")";
+    }
+
+    @Override
+    public int hashCode() {
+        return idMateria;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Materia)) return false;
+        Materia m = (Materia) obj;
+        return this.idMateria == m.idMateria;
 }
+    }

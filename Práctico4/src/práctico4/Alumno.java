@@ -53,4 +53,25 @@ public class Alumno {
   public int cantidadMaterias(){
       return materias.size();
   }
+  public HashSet<Materia> getMaterias() {
+        return materias;
+    }
+
+    @Override
+    public String toString() {
+        return Apellido + " " + nombre;
+    }
+
+    @Override
+    public int hashCode() {
+        return legajo;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Alumno)) return false;
+        Alumno a = (Alumno) obj;
+        return this.legajo == a.legajo;
+    }
 }

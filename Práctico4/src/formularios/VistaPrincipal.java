@@ -36,10 +36,11 @@ public static HashSet<Materia> materias = new HashSet<>();
         jbAlumnos = new javax.swing.JButton();
         jbInscripción = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
+        jlb1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        escritorio.setBackground(new java.awt.Color(255, 204, 204));
+        escritorio.setBackground(new java.awt.Color(204, 204, 204));
 
         jbMaterias.setText("Materias");
         jbMaterias.addActionListener(new java.awt.event.ActionListener() {
@@ -69,47 +70,68 @@ public static HashSet<Materia> materias = new HashSet<>();
             }
         });
 
+        jlb1.setBackground(new java.awt.Color(204, 255, 204));
+        jlb1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jlb1.setText("Sistema de Gestión Escolar");
+
         escritorio.setLayer(jbMaterias, javax.swing.JLayeredPane.DEFAULT_LAYER);
         escritorio.setLayer(jbAlumnos, javax.swing.JLayeredPane.DEFAULT_LAYER);
         escritorio.setLayer(jbInscripción, javax.swing.JLayeredPane.DEFAULT_LAYER);
         escritorio.setLayer(jbSalir, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorio.setLayer(jlb1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jbSalir)
-                    .addComponent(jbInscripción)
-                    .addComponent(jbAlumnos)
-                    .addComponent(jbMaterias))
-                .addContainerGap(268, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jbMaterias)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jlb1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(escritorioLayout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(jbAlumnos)
+                        .addGap(54, 54, 54)
+                        .addComponent(jbInscripción, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jbSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(91, 91, 91))))
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jbMaterias)
-                .addGap(18, 18, 18)
-                .addComponent(jbAlumnos)
-                .addGap(18, 18, 18)
-                .addComponent(jbInscripción)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jbSalir)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jlb1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jbMaterias, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jbSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jbInscripción, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(escritorioLayout.createSequentialGroup()
+                        .addComponent(jbAlumnos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(3, 3, 3)))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -182,5 +204,6 @@ public static HashSet<Materia> materias = new HashSet<>();
     private javax.swing.JButton jbInscripción;
     private javax.swing.JButton jbMaterias;
     private javax.swing.JButton jbSalir;
+    private javax.swing.JLabel jlb1;
     // End of variables declaration//GEN-END:variables
 }
