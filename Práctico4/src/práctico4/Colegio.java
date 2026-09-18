@@ -5,6 +5,8 @@
  */
 package práctico4;
 
+import java.util.HashSet;
+
 /**
  *
  * @author LAURA TELLO
@@ -16,6 +18,10 @@ public static void main(String[] args) {
         Materia web2 = new Materia (1,"Web 2", 2);
         Materia Matemáticas = new Materia (2, "Matemáticas", 1);
         Materia Laboratorio1 = new Materia (3, "Laboratorio1", 1);
+        HashSet<Materia> materias = new HashSet <> ();
+        materias.add(web2);
+        materias.add(Matemáticas);
+        materias.add(Laboratorio1);
         
     Alumno alumno1 = new Alumno (1001, "López", "Martin");
     Alumno alumno2 = new Alumno (1002, "Martínez", "Brenda"); 
